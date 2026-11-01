@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="예은침례교회 주일 예배 스터디 카드 - 이십 년의 긴 침묵">
+    <meta property="og:description" content="사무엘상 7:2, 12 | 패배의 이름이었던 에벤에셀이 회개와 기도를 통해 마침내 은혜의 기념비로 바뀝니다.">
+    <meta property="og:image" content="https://img.youtube.com/vi/7XaFqtFBeKg/maxresdefault.jpg">
+    
+    <title>예은침례교회 주일 예배 스터디 카드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #2563eb; --primary-light: #dbeafe; --primary-dark: #1e40af;
+            --bg: #f1f5f9; --app-bg: #f8fafc; 
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; } 
+        body { background-color: var(--bg); margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100dvh; font-family: 'Noto Sans KR', sans-serif; overflow: hidden; }
+        .app-container { width: 100vw; height: 100dvh; background-color: var(--app-bg); display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; }
+        .app-container::-webkit-scrollbar { display: none; }
+        @media (min-width: 768px) { .app-container { width: 450px; height: 90vh; border-radius: 2.5rem; border: 10px solid #1e293b; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3); } }
+        
+        .slide-section { flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; position: relative; overflow: hidden; background: white; }
+        .section-content { flex: 1; overflow-y: auto; padding: 3rem 1.5rem 2rem 1.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
+        .section-content::-webkit-scrollbar { display: none; }
+        
+        .nav-footer { flex-shrink: 0; padding: 1.2rem 1.5rem; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(15px); display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid #e2e8f0; z-index: 40; }
+        .btn-nav { padding: 0.9rem 1rem; border-radius: 1.2rem; font-weight: 700; font-size: 0.95rem; flex: 1; text-align: center; cursor: pointer; border: none; transition: 0.3s; }
+        .btn-next { background-color: var(--primary); color: white; }
+        .btn-prev { background-color: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
+        
+        .detail-text { font-size: 1.15rem; line-height: 1.8; color: #334155; word-break: keep-all; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; border-radius: 1rem; overflow: hidden; background: #000; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+        
+        .badge { display: inline-block; padding: 0.3rem 0.8rem; background-color: var(--primary-light); color: var(--primary-dark); font-weight: 700; border-radius: 2rem; font-size: 0.85rem; margin-bottom: 1rem; }
+        .card { background: white; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #f1f5f9; }
+        
+        .mask-word { background: #e2e8f0; color: #e2e8f0; padding: 0 4px; border-radius: 4px; cursor: pointer; transition: 0.3s; }
+        .mask-word:active { background: transparent; color: var(--primary-dark); font-weight: bold; }
+
+        @media print {
+            body, html { background: white !important; overflow: visible !important; height: auto !important; }
+            .app-container { display: block !important; width: 100% !important; border: none !important; box-shadow: none !important; }
+            .slide-section { page-break-after: always !important; height: auto !important; display: block !important; border-bottom: 1px solid #eee; padding-bottom: 2rem; }
+            .nav-footer, .btn-nav { display: none !important; }
+            .section-content { padding: 1rem 0 !important; overflow: visible !important; }
+            .card { box-shadow: none !important; border: 1px solid #ddd !important; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container" id="app">
+
+        <!-- Section 1: 타이틀 및 영상 -->
+        <div class="slide-section" id="sec1">
+            <div class="section-content">
+                <div>
+                    <span class="badge">예은침례교회 2026.11.01</span>
+                    <h1 class="text-3xl font-bold text-gray-800 font-[Nanum_Myeongjo] leading-tight mb-2">이십 년의 긴 침묵</h1>
+                    <p class="text-gray-500 font-medium">본문: 사무엘상 7:2, 12</p>
+                </div>
+                <div class="video-wrapper mt-4">
+                    <iframe src="https://www.youtube.com/embed/7XaFqtFBeKg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="card mt-4 bg-[var(--primary-light)] border-none">
+                    <p class="text-[var(--primary-dark)] font-bold text-center">"실패와 침묵의 자리마저도, 마음을 쏟아놓을 때 은혜와 승리의 에벤에셀로 바뀝니다."</p>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="btn-nav btn-next w-full" onclick="scrollToSec('sec2')">설교 강해 보기 ➔</button>
+            </div>
+        </div>
+
+        <!-- Section 2: 설교 강해 요약 -->
+        <div class="slide-section" id="sec2">
+            <div class="section-content">
+                <span class="badge">Sermon Outline</span>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-[var(--primary)] pb-2 inline-block mb-4">설교 강해</h2>
+                
+                <div class="space-y-4">
+                    <div class="card">
+                        <h3 class="font-bold text-lg mb-1">서론</h3>
+                        <p class="text-gray-600">언약궤가 기럇여아림의 아비나답 집에 머물던 이십 년. 하나님께서 침묵하신 것처럼 보이는 길고 메마른 시간이었습니다. 그러나 백성들의 마음에 비로소 여호와를 향한 깊은 사모함과 그리움이 다시 싹트기 시작했습니다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 1. 패배의 이름, 에벤에셀</h3>
+                        <p class="text-gray-600">이십 년 전, 이스라엘은 에벤에셀에서 블레셋에게 처참한 패배를 겪었습니다. 하나님께 마음을 돌이키지 않은 채 언약궤라는 '물건'만 부적처럼 앞세운 결과였습니다. 무늬만 갖추고 하나님을 이용하려 했던 이가봇(영광이 떠남)의 자리였습니다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 2. 물을 쏟는 사람들, 미스바</h3>
+                        <p class="text-gray-600">사무엘의 외침에 백성들은 풍요를 보장하던 우상을 버리고 미스바에 모였습니다. 물을 쏟듯 변명 없이 죄를 털어놓았습니다. 적군의 침공이라는 위기 앞에서도 칼을 들거나 궤를 찾지 않고, 가장 연약한 어린 양을 번제로 드리며 온전히 하나님만 의지했습니다.</p>
+                    </div>
+                    <div class="card border-l-4 border-[var(--primary)]">
+                        <h3 class="font-bold text-lg mb-1">Point 3. 다시 세운 돌, 에벤에셀</h3>
+                        <p class="text-gray-600">번제가 드려질 때 하나님께서 하늘의 우레로 친히 적을 치시고 승리케 하셨습니다. 가장 아팠던 실패의 장소가 '여호와께서 여기까지 도우셨다'는 회복의 고백, 새로운 은혜의 표석으로 덧입혀지는 순간이었습니다.</p>
+                    </div>
+                    <div class="card bg-gray-50">
